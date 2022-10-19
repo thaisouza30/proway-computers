@@ -1,0 +1,39 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+  </h1>
+  <div class="container-menu">
+
+
+  <nav class="main-header__menu">
+    <ul>
+      <li>
+        <a routerLink="produtos">Produtos</a>
+      </li>
+      <li>
+        <a routerLink="carrinho">
+          <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-cart.png"/>
+          Carrinho
+          <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="contato">Contato</a>
+      </li>
+      <li>
+        <a><img src="https://img.icons8.com/material/24/000000/facebook-new.png"/></a>
+      </li>
+      <li>
+        <a><img src="https://img.icons8.com/material/24/000000/instagram-new.png"/></a>
+      </li>
+      <li>
+        <a><img src="https://img.icons8.com/material/24/000000/twitter--v2.png"/></a>
+      </li>
+      <li>
+        <a><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin-2.png"/></a>
+      </li>
+    </ul>
+  </nav>
+  <app-barra-pesquisa></app-barra-pesquisa>
+</div>
+</header>
